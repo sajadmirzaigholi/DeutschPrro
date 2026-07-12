@@ -1,3 +1,4 @@
+@file:OptIn(ExperimentalMaterial3Api::class)
 package com.deutschpro.app.ui.screens.profile
 
 import androidx.compose.foundation.layout.Arrangement
@@ -34,6 +35,7 @@ import androidx.lifecycle.viewmodel.compose.viewModel
 import com.deutschpro.app.ui.components.AchievementCard
 import com.deutschpro.app.ui.components.StreakBadge
 import com.deutschpro.app.ui.components.XpBadge
+import androidx.compose.material3.ExperimentalMaterial3Api
 
 @Composable
 fun ProfileScreen() {
