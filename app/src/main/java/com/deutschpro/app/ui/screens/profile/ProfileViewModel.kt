@@ -46,20 +46,18 @@ class ProfileViewModel(
     ) { values ->
         val totalXp = values[0] as Int
         val userLevel = XpEngine.userLevelForXp(totalXp)
-        ProfileUiState(
-            totalXp = totalXp,
-            userLevel = userLevel,
-            xpForNextLevel = XpEngine.xpNeededForNextUserLevel(userLevel),
-            currentStreak = values[1] as Int,
-            longestStreak = values[2] as Int,
-            dailyGoalXp = values[3] as Int,
-            themeMode = values[4] as String,
-            lessonsCompleted = values[5] as Int,
-            @Suppress("UNCHECKED_CAST")
-            achievements = values[6] as List<AchievementEntity>,
-            @Suppress("UNCHECKED_CAST")
-            unlockedAchievementIds = (values[7] as List<String>).toSet()
-        )
+       ProfileUiState(
+    totalXp = totalXp,
+    userLevel = userLevel,
+    xpForNextLevel = XpEngine.xpNeededForNextUserLevel(userLevel),
+    currentStreak = values[1] as Int,
+    longestStreak = values[2] as Int,
+    dailyGoalXp = values[3] as Int,
+    themeMode = values[4] as String,
+    lessonsCompleted = values[5] as Int,
+    achievements = values[6] as List<AchievementEntity>,
+    unlockedAchievementIds = (values[7] as List<String>).toSet()
+)
     }.stateIn(viewModelScope, SharingStarted.WhileSubscribed(5000), ProfileUiState())
 
     fun setDailyGoal(xp: Int) {
