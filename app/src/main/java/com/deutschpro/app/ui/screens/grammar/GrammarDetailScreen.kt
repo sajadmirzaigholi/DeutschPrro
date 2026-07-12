@@ -1,3 +1,5 @@
+
+@file:OptIn(ExperimentalMaterial3Api::class)
 package com.deutschpro.app.ui.screens.grammar
 
 import androidx.compose.foundation.layout.Arrangement
@@ -30,6 +32,7 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
 import com.deutschpro.app.DeutschProApplication
 import com.deutschpro.app.data.local.GrammarTopicEntity
+import androidx.compose.material3.ExperimentalMaterial3Api
 
 @Composable
 fun GrammarDetailScreen(topicId: String, onBack: () -> Unit) {
