@@ -1,3 +1,4 @@
+@file:OptIn(ExperimentalMaterial3Api::class)
 package com.deutschpro.app.ui.screens.vocabulary
 
 import androidx.compose.foundation.clickable
@@ -35,6 +36,7 @@ import androidx.lifecycle.viewmodel.compose.viewModel
 import com.deutschpro.app.data.model.LevelCode
 import com.deutschpro.app.ui.theme.Error40
 import com.deutschpro.app.ui.theme.Success40
+import androidx.compose.material3.ExperimentalMaterial3Api
 
 @Composable
 fun FlashcardScreen(levelCode: String, onBack: () -> Unit) {
