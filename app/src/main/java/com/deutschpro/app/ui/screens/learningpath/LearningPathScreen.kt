@@ -1,3 +1,4 @@
+@file:OptIn(ExperimentalMaterial3Api::class)
 package com.deutschpro.app.ui.screens.learningpath
 
 import androidx.compose.foundation.horizontalScroll
@@ -33,6 +34,7 @@ import com.deutschpro.app.ui.components.DailyGoalRing
 import com.deutschpro.app.ui.components.LessonNode
 import com.deutschpro.app.ui.components.StreakBadge
 import com.deutschpro.app.ui.components.XpBadge
+import androidx.compose.material3.ExperimentalMaterial3Api
 
 @Composable
 fun LearningPathScreen(
