@@ -1,3 +1,5 @@
+@file:OptIn(ExperimentalMaterial3Api::class)
+
 package com.deutschpro.app.ui.screens.grammar
 
 import androidx.compose.foundation.clickable
@@ -29,6 +31,7 @@ import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.deutschpro.app.data.model.LevelCode
+import androidx.compose.material3.ExperimentalMaterial3Api
 
 @Composable
 fun GrammarScreen(onTopicClick: (String) -> Unit) {
